@@ -1,16 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-* {
-    box-sizing: border-box;
-}
-
-.titel {
-    color: white;
-    font-family: 'Gruppo', cursive;
-    text-shadow: 0 0 10px yellowgreen, 0 0 20px yellowgreen, 0 0 40px yellowgreen, 0 0 80px yellowgreen;
-    font-size: 4rem;
-}
-
-.specialbutton {
+    @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    .titel {
+        color: white;
+        font-family: 'Gruppo', cursive;
+        font-size: 4rem;
+        text-align: right;
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 300px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: white background-color: rgba(0, 0, 0, 5);
+    }
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 50px;
+        border: 1px solid black;
+        width: 80%;
+    }
+    
+    .close {
+        color: black;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: firebrick;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    /*.specialbutton {
     z-index: 99999999999999;
     position: fixed;
     background-color: lightslategrey;
@@ -20,34 +54,31 @@
     padding: 15px 40px;
     display: inline-block;
     color: white;
-    /*margin-left: 550px*/
-    ;
-}
-
-.specialbutton:hover {
+    /*margin-left: 550px;
+}*/
+    /* .specialbutton:hover {
     background-color: red;
-}
-
-#element {
+}*/
+    /*#element {
     position: absolute;
     top: 0x;
     /*left: 25px;*/
-    width: 0px;
+    /*width: 0px;
     height: 1700px;
     background-color: yellowgreen;
     border: solid 4px white;
     box-shadow: 0 0 10px yellowgreen, 0 0 20px yellowgreen, 0 0 40px yellowgreen;
-    ;
-}
-
-#stress {
+}*/
+    /*#stress {
     border: white 5px solid;
     width: 95vw;
     height: 85vh;
-    /*padding: 10px;*/
-}
-
-.hintergrund {
-    width: 100%;
-    background-color: black;
-}
+    /*padding: 10px;
+}*/
+    
+    .hintergrund {
+        /*width: 100%;*/
+        background-size: cover;
+        background-image: url(/Bilder/Hintergrund.png);
+        background-repeat: no-repeat;
+    }
